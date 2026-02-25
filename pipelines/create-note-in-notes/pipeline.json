@@ -1,0 +1,7 @@
+{
+  "enabled" : true,
+  "heardAs" : "note",
+  "matchType" : "startsWith",
+  "name" : "Create Note in Notes",
+  "shellCommand" : "osascript -e 'tell application \"Notes\" to activate' -e 'tell application \"System Events\" to key code 45 using {command down}'\ntxt=$FREEWAY_TEXT\nif [[ \"$txt\" != \"Note.\" ]]; then\n\ttxt=\"${txt#Note }\"\n\tzsh -c 'str=\"${1#Note*(,)[[:space:]]*}\"; echo \"${str:0:1:u}${str:1}\"' -- \"$txt\"\nfi"
+}
