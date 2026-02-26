@@ -1,0 +1,7 @@
+{
+  "enabled" : true,
+  "heardAs" : "timeman",
+  "matchType" : "startsWith",
+  "name" : "TimeMan Actions",
+  "shellCommand" : "txt=$FREEWAY_TEXT\nencoded=$(printf '%s' \"$txt\" | jq -sRr @uri)\nopen \"timeman:\/\/handle?speech=$encoded\"\nif [ $? -eq 1 ]; then\n\tosascript -e '\n\tset theButtons to {\"Not Now\", \"Find on Website\", \"View in App Store\"}\n\ttry\n\t\tactivate\n\t\tset theAlert to display dialog \"TimeMan.app is required to process speech\" with title \"Freeway\" buttons theButtons default button 3 cancel button 1\n\t\tset clicked to button returned of theAlert\n\t\tif clicked is item 3 of theButtons then\n\t\t\topen location \"itms-apps:\/\/apps.apple.com\/app\/timeman\/id1484426198?mt=12\"\n\t\telse if clicked is item 2 of theButtons then\n\t\t\topen location \"https:\/\/timemanapp.com\"\n\t\tend if\n\tend try\n'\nfi"
+}

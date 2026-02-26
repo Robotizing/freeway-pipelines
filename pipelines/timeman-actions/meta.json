@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "created_at": "2026-02-26T00:00:00Z",
+  "updated_at": "2026-02-26T00:00:00Z",
+  "name": "TimeMan Actions",
+  "author": {
+    "name": "Robotizing Networks",
+    "url": "https://TimeMan.app"
+  },
+  "compatibility": ["macOS"],
+  "categories": ["Productivity", "Business"],
+  "tags": ["timeman", "integration", "search", "plan", "log"],
+  "description": "Voice interface for TimeMan app. Say 'TimeMan' followed by 'plan', 'log', or a search query.",
+  "trigger": {
+    "pattern": "timeman",
+    "matchType": "startsWith"
+  }
+}
