@@ -91,7 +91,7 @@
         "name": "Robotizing Networks",
         "url": "https://TimeMan.app"
       },
-      "tags": ["timeman", "integration", "search", "plan", "log"],
+      "tags": ["timeman", "integration", "search", "plan"],
       "description": "Voice interface for TimeMan app. Say 'TimeMan' followed by 'plan', 'log', or a search query.",
       "source_url": "https://github.com/Robotizing/freeway-pipelines/tree/timeman/pipelines/timeman-actions"
     }
