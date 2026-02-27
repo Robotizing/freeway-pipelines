@@ -5,6 +5,7 @@
   "name": "TimeMan Actions",
   "author": {
     "name": "Robotizing Networks",
+    "email": "support@timemanapp.com",
     "url": "https://TimeMan.app"
   },
   "compatibility": ["macOS"],
