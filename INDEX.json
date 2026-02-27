@@ -89,6 +89,7 @@
       "categories": ["Productivity", "Business"],
       "author": {
         "name": "Robotizing Networks",
+        "email": "support@timemanapp.com",
         "url": "https://TimeMan.app"
       },
       "tags": ["timeman", "integration", "search", "plan"],
